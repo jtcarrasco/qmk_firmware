@@ -18,7 +18,8 @@
 // Layer shorthand
 #define _QW_M 0
 #define _QW_W 1
-#define _FN 2
+#define _QW_Q 2
+#define _FN 3
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -84,7 +85,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    	RESET, 		KC_NO,     KC_NO,			KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
   	KC_NO, 	  KC_NO,     DF(_QW_W), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
   	KC_NO, 		DF(_QW_M), KC_NO,			KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
-  	KC_NO, 		KC_NO,   	 RKC_NO,    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
+  	KC_NO, 		KC_NO,   	 KC_NO,     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
   	KC_NO, 		KC_NO,  	 KC_NO,  		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, MO(_FN), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO \
 	),
 
