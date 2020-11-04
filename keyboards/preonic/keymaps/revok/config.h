@@ -8,8 +8,6 @@
     // #define STARTUP_SONG SONG(NO_SOUND)
 
     #define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
-                                  SONG(COLEMAK_SOUND), \
-                                  SONG(DVORAK_SOUND) \
                                 }
 #endif
 
@@ -40,5 +38,3 @@
 //#define MIDI_TONE_KEYCODE_OCTAVES 2
 
 #endif
-
-#define TAPPING_TERM 200
