@@ -40,15 +40,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     XXXXXXX,   XXXXXXX,   KC_LALT,   MO(_FUN), KC_ESC,   XXXXXXX,   XXXXXXX,   KC_SPC,   MO(_NUM), MT_ENT,   XXXXXXX,   XXXXXXX
   ),
   [_NUM] = LAYOUT(
-    _______,   KC_1,      KC_2,   KC_3,      _______,                         KC_DEL,    SC_AC,     SC_OUT,    SC_IN,     KC_BSPC,
-    _______,   KC_4,      KC_5,   KC_6,      _______,                         KC_UP,     KC_LEFT,   KC_DOWN,   KC_RIGHT,  SC_RFH,
-    _______,   KC_7,      KC_8,   KC_9,      _______,   XXXXXXX,   XXXXXXX,   SC_UNDO,   SC_CUT,    SC_COPY,   SC_PSTE,   KC_RSFT,
-    XXXXXXX,   XXXXXXX,   KC_0,   _______,   SC_V,      XXXXXXX,   XXXXXXX,   KC_TAB,    _______,   SC_SAVE,   XXXXXXX,   XXXXXXX
+    KC_LCTL,   KC_1,      KC_2,   KC_3,      _______,                         KC_DEL,    SC_AC,     SC_OUT,    SC_IN,     KC_BSPC,
+    KC_LALT,   KC_4,      KC_5,   KC_6,      _______,                         KC_UP,     KC_LEFT,   KC_DOWN,   KC_RIGHT,  SC_RFH,
+    KC_LSFT,   KC_7,      KC_8,   KC_9,      _______,   XXXXXXX,   XXXXXXX,   SC_UNDO,   SC_CUT,    SC_COPY,   SC_PSTE,   KC_RSFT,
+    XXXXXXX,   XXXXXXX,   KC_0,   KC_TRNS,   SC_V,      XXXXXXX,   XXXXXXX,   KC_TAB,    KC_TRNS,   SC_SAVE,   XXXXXXX,   XXXXXXX
   ),
   [_FUN] = LAYOUT(
-    _______,   KC_F1,     KC_F2,    KC_F3,     KC_GRAVE,                        KC_NUBS,   KC_MINS,   KC_EQL,    KC_UNDS,   KC_PLUS,
-    KC_CAPS,   KC_F4,     KC_F5,    KC_F6,     _______,                         KC_LCBR,   KC_RCBR,   KC_LBRC,   KC_RBRC,   KC_QUOT,
-    _______,   KC_F7,     KC_F8,    KC_F9,     _______,   XXXXXXX,   XXXXXXX,   KC_PIPE,   KC_LPRN,   KC_RPRN,   KC_BSLS,   KC_RSFT,
-    XXXXXXX,   XXXXXXX,   KC_F10,   _______,   SC_V,      XXXXXXX,   XXXXXXX,   _______,   _______,   _______,   XXXXXXX,   XXXXXXX
+    KC_CAPS,   KC_F1,     KC_F2,    KC_F3,     KC_GRAVE,                        KC_NUBS,   KC_MINS,   KC_EQL,    KC_UNDS,   KC_PLUS,
+    KC_F11,    KC_F4,     KC_F5,    KC_F6,     _______,                         KC_LCBR,   KC_RCBR,   KC_LBRC,   KC_RBRC,   KC_QUOT,
+    KC_F12,    KC_F7,     KC_F8,    KC_F9,     _______,   XXXXXXX,   XXXXXXX,   KC_PIPE,   KC_LPRN,   KC_RPRN,   KC_BSLS,   KC_RSFT,
+    XXXXXXX,   XXXXXXX,   KC_F10,   KC_TRNS,   SC_V,      XXXXXXX,   XXXXXXX,   KC_TRNS,   KC_TRNS,   KC_TRNS,   XXXXXXX,   XXXXXXX
   )
 };
