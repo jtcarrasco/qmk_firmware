@@ -15,8 +15,9 @@ enum layer_names {
 #define MT_RS   RSFT_T(KC_SLSH)
 #define MT_ESC  LGUI_T(KC_ESC)
 #define MT_ENT  LGUI_T(KC_ENT)
-#define MT_FUN  LT(_FUN, KC_TAB)
-#define MT_NUM  MO(_NUM)
+//#define MT_FUN  LT(_FUN, KC_TAB)
+//#define MT_NUM  MO(_NUM)
+//#define MT_FUN  MO(_FUN)
 
 // macros keys
 #define SC_CUT              LCTL(KC_X)
@@ -24,12 +25,12 @@ enum layer_names {
 #define SC_PSTE             LCTL(KC_V)
 #define SC_SAVE             LCTL(KC_S)
 #define SC_RFH              LCTL(KC_R)
-#define SC_AC               LCTL(KC_0)
-#define SC_UNDO             LCTL(KC_Z)
-#define SC_OUT              LCTL(KC_MINS)
-#define SC_IN               LCTL(KC_PPLS)
-#define SC_V                LGUI(KC_V)
-#define WIN_TAB             LGUI(KC_TAB)
+//#define SC_AC               LCTL(KC_0)
+//#define SC_UNDO             LCTL(KC_Z)
+//#define SC_OUT              LCTL(KC_MINS)
+//#define SC_IN               LCTL(KC_PPLS)
+//#define SC_V                LGUI(KC_V)
+//#define WIN_TAB             LGUI(KC_TAB)
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -42,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_NUM] = LAYOUT(
     _______,   KC_1,      KC_2,   KC_3,      _______,                         KC_DEL,    _______,   _______,   _______,   KC_BSPC,
     _______,   KC_4,      KC_5,   KC_6,      _______,                         KC_UP,     KC_LEFT,   KC_DOWN,   KC_RIGHT,  SC_RFH,
-    _______,   KC_7,      KC_8,   KC_9,      _______,   XXXXXXX,   XXXXXXX,   KC_SAVE,   SC_CUT,    SC_COPY,   SC_PSTE,   KC_RSFT,
+    KC_LSFT,   KC_7,      KC_8,   KC_9,      _______,   XXXXXXX,   XXXXXXX,   KC_SAVE,   SC_CUT,    SC_COPY,   SC_PSTE,   KC_RSFT,
     XXXXXXX,   XXXXXXX,   KC_0,   KC_TRNS,   KC_TRNS,   XXXXXXX,   XXXXXXX,   KC_TAB,    KC_TRNS,   KC_TRNS,   XXXXXXX,   XXXXXXX
   ),
   [_FUN] = LAYOUT(
