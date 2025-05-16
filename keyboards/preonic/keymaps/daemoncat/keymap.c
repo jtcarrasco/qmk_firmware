@@ -16,9 +16,10 @@ enum custom_keycodes {
 };
 
 // mod-tap keys
-#define MT_ENT  LGUI_T(KC_ENT)
+#define MT_ENT  LSFT(KC_ENT)
 
 // macros keys
+#define SC_FLW              LALT(KC_SPC)
 #define SC_CUT              LCTL(KC_X)
 #define SC_COPY             LCTL(KC_C)
 #define SC_PSTE             LCTL(KC_V)
@@ -38,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS,
     KC_F1,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, MT_ENT,
-    KC_F2,   KC_LCTL, KC_LALT, KC_F3,   LOWER,   KC_SPC,  KC_SPC,  RAISE,   KC_RGUI, KC_RALT, KC_RCTL, KC_TAB
+    KC_F2,   KC_LCTL, KC_LALT, KC_F3,   LOWER,   KC_SPC,  KC_SPC,  RAISE,   KC_RGUI, KC_RALT, KC_RCTL, SC_FLW
 ),
 
 [_LOWER] = LAYOUT_preonic_grid(
@@ -53,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, SC_AC,   SC_OUT,  SC_IN,   _______, _______,
     _______, _______, _______, _______, _______, _______, KC_UP,   KC_LEFT, KC_DOWN, KC_RGHT, _______, SC_RFH,
-    _______, _______, _______, _______, _______, _______, SC_UNDO, SC_CUT,  SC_COPY, SC_PSTE, _______, KC_RSFT,
+    _______, _______, _______, _______, _______, _______, SC_UNDO, SC_CUT,  SC_COPY, SC_PSTE, _______, SC_SAVE,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 ),
 
