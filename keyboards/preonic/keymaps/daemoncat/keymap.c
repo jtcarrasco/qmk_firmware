@@ -16,7 +16,7 @@ enum custom_keycodes {
 };
 
 // mod-tap keys
-#define MT_ENT  LSFT(KC_ENT)
+#define MT_ENT  RSFT_T(KC_ENT)
 
 // macros keys
 #define SC_FLW              LALT(KC_SPC)
