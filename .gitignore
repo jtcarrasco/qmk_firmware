@@ -120,3 +120,7 @@ compile_commands.json
 via*.json
 /keyboards/**/keymaps/via/*
 /keyboards/**/keymaps/vial/*
+
+# Claude Code project config: local only, never published
+.claude/
+CLAUDE.md
